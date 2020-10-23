@@ -9,3 +9,6 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 ### [Regra de Hebb](regraDeHebb)
 
 ### [Adaline/Perceptron](adaline-perceptron)
+
+### [Differential Evolution](differential-evolution)
+Otimização da função de rosenbrock a partir de um algoritmo de evolução diferencial
