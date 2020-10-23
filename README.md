@@ -10,5 +10,7 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 Implementação da regra de Hebb e treinamento utilizando 16 funções lógicas
 ### [Adaline/Perceptron](adaline-perceptron)
 Implementação simples do algoritmo Adaline e Perceptron
+### [Multilayer Perceptron](multilayer-perceptron)
+Treinamento de uma rede neural mmulticamadas para resolução do problema do ou-exclusivo(xor)
 ### [Differential Evolution](differential-evolution)
 Otimização da função de rosenbrock a partir de um algoritmo de evolução diferencial
