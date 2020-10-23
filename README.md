@@ -7,7 +7,5 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 ## Algoritmos implementados
 
 ### [Regra de Hebb](regraDeHebb)
-A partir da regra de hebb realizado treinamento para 16 funções lógicas
 
 ### [Adaline/Perceptron](adaline-perceptron)
-A partir dos algortimos de perceptron e adaline, treinar para uma tabela de dados
