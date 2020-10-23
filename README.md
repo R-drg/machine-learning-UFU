@@ -7,8 +7,8 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 ## Algoritmos implementados
 
 ### [Regra de Hebb](regraDeHebb)
-
+Implementação da regra de Hebb e treinamento utilizando 16 funções lógicas
 ### [Adaline/Perceptron](adaline-perceptron)
-
+Implementação simples do algoritmo Adaline e Perceptron
 ### [Differential Evolution](differential-evolution)
 Otimização da função de rosenbrock a partir de um algoritmo de evolução diferencial
