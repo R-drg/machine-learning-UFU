@@ -10,4 +10,4 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 A partir da regra de hebb realizado treinamento para 16 funções lógicas
 
 ### [Adaline/Perceptron](adaline-perceptron)
-A partir da regra de hebb realizado treinamento para 16 funções lógicas
+A partir dos algortimos de perceptron e adaline, treinar para uma tabela de dados
