@@ -35,7 +35,7 @@ int main(){
         while(trocou == 1){
             trocou=0;
             ciclos=ciclos+1;
-            printf("Ciclo %.0f => ",ciclos);
+            printf("Ciclo  %.0f => ",ciclos);
             printf("wnovo[0]:%.1f wnovo[1]: %.1f   bnovo: %.1f  \n",wNovo[0],wNovo[1],bNovo);
                 for (int i=0;i<14;i++){
                 yLiquido = wAnterior[0] * s[i][0] + wAnterior[1] * s[i][1] + bAnterior;
