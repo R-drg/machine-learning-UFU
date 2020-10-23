@@ -1,4 +1,4 @@
-# Adaline- Perceptron
+# Adaline-Perceptron
 
 ## Objetivo
 
