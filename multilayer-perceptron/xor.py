@@ -1,8 +1,5 @@
 import math,random,numpy
 
-dots=open('dots.txt','a')
-cicles=open('cicles.txt','a')
-
 deltinhainv = []
 deltinhav = []
 z = []
@@ -92,11 +89,7 @@ while ciclo<numCiclo and erroQ>erroMin:
             bv[j] = bv[j]+deltabv[j]
         
     erroQ = erroQ + 0.5*((t[i]-y)*(t[i]-y))
-    dots.write(str(erroQ)+"\n")
-    cicles.write(str(ciclo)+"\n")
     print("\nCiclo "+ str(ciclo) + ": "+ str(erroQ))
-cicles.close()
-dots.close()
 print("Fim do Treinamento\n"+
       "Erro Quadrático final: " + str(erroQ) + "\n" +
       "Ciclos: " + str(ciclo) +"\n" +
