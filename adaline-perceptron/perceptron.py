@@ -19,19 +19,19 @@ def treinamento_perceptron(maxCiclos,alfa,t,s):
                 y=-1
 
             if(y!=t[i]):
-                    trocou=1;
+                    trocou=1
                     for z in range(2):
                         wNovo[z]=wAnterior[z]+ alfa*s[i][z]*t[i]
                         wAnterior[z]=wNovo[z]
                     bNovo=bAnterior+ alfa*t[i]
                     bAnterior=bNovo
         ciclo+=1
-        print("wnovo[0]:%.4f  wnovo[1]: %.4f  bnovo: %.4f" % (wNovo[0],wNovo[1],bNovo));
+        print("wnovo[0]:%.4f  wnovo[1]: %.4f  bnovo: %.4f" % (wNovo[0],wNovo[1],bNovo))
     return wNovo,bNovo
 
 def ativacao(w,b,t,s):
     teta = 0
-    print("\n\nResultados:\n");
+    print("\n\nResultados:\n")
     print("Pesos finais: "+str(w) +" Bias final: "+ str(b))
     for i in range(14):
         flag="[Fail]"
