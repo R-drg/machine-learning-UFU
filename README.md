@@ -12,5 +12,7 @@ Implementação da regra de Hebb e treinamento utilizando 16 funções lógicas
 Implementação simples do algoritmo Adaline e Perceptron
 ### [Multilayer Perceptron](multilayer-perceptron)
 Treinamento de uma rede neural mmulticamadas para resolução do problema do ou-exclusivo(xor)
+### [Sonar Perceptron](sonar-perceptron)
+Classsificação de dados de um sonar atráves da implementação de um perceptron multicamadas
 ### [Differential Evolution](differential-evolution)
 Otimização da função de rosenbrock a partir de um algoritmo de evolução diferencial
