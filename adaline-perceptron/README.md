@@ -165,3 +165,4 @@ Caso[13]: Expectativa: -1.0 Resultado: -1.0 [Pass]
 
 Grafico representando a decision boundary do Perceptron
 
+<img src="https://github.com/R-drg/machine-learning-UFU/blob/main/adaline-perceptron/imagens/perceptrongraph.jpg?raw=true">
