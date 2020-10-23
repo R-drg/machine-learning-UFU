@@ -30,6 +30,7 @@ def treinamento_adaline(maxCiclos,alfa,t,s):
 def ativacao(w,b,t,s):
     teta = 0
     print("\n\nResultados:\n");
+    print("Pesos finais: "+str(w) +" Bias final: "+ str(b))
     for i in range(14):
         flag="[Fail]"
         yLiquido = w[0]*s[i][0]+ w[1]*s[i][1] + b
