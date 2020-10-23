@@ -75,9 +75,46 @@ def ativacao(w,b,t,s):
             flag="[Pass]"
         print("Caso[%i]: Expectativa: %.1f Resultado: %.1f %s" % (i,t[i],y,flag))
 ```
+### Perceptron
+
+Semelhante ao código do Adaline, contudo com mudanças na função do treinamento
+
+```python
+def treinamento_perceptron(maxCiclos,alfa,t,s):
+    wNovo=[0,0]
+    #Inicializa pesos e bias aleatorio
+    wAnterior=[0,0]
+    bAnterior=ciclo=teta=0
+    trocou=1
+    while(trocou==1):
+        trocou = 0
+        print("\nCiclo "+str(ciclo)+" => ",end='')
+        for i in range(14):
+            #calcula o y liquido
+            yLiquido = wAnterior[0]*s[i][0] + wAnterior[1]*s[i][1] + bAnterior
+            if yLiquido>=teta:
+                y=1
+            else:   
+                y=-1
+
+            if(y!=t[i]):
+                    trocou=1;
+                    for z in range(2):
+                        wNovo[z]=wAnterior[z]+ alfa*s[i][z]*t[i]
+                        wAnterior[z]=wNovo[z]
+                    bNovo=bAnterior+ alfa*t[i]
+                    bAnterior=bNovo
+        ciclo+=1
+        print("wnovo[0]:%.4f  wnovo[1]: %.4f  bnovo: %.4f" % (wNovo[0],wNovo[1],bNovo));
+    return wNovo,bNovo
+```
 
 ## Resultado
 ### Adaline
+
+Erro quadrático
+
+<img src="https://github.com/R-drg/machine-learning-UFU/blob/main/adaline-perceptron/imagens/errograph.jpg?raw=true">
 
 Output do console utilizando 300 ciclos máximos e taxa de aprendizado (*alfa*) de 0.1
 ```
@@ -101,3 +138,31 @@ Caso[13]: Expectativa: -1.0 Resultado: -1.0 [Pass]
 Grafico representando a decision boundary do Adaline
 
 <img src="https://github.com/R-drg/machine-learning-UFU/blob/main/adaline-perceptron/imagens/adalinegraph.jpg?raw=true">
+
+### Perceptron
+
+Output do console utilizando 300 ciclos máximos e taxa de aprendizado (*alfa*) de 0.1
+
+```
+Resultados:
+
+Pesos finais: [-0.26, 0.22] Bias final: 0.1
+Caso[0]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[1]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[2]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[3]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[4]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[5]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[6]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[7]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[8]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[9]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[10]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[11]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+Caso[12]: Expectativa: 1.0 Resultado: 1.0 [Pass]
+Caso[13]: Expectativa: -1.0 Resultado: -1.0 [Pass]
+```
+
+Grafico representando a decision boundary do Perceptron
+
+<img src="https://github.com/R-drg/machine-learning-UFU/blob/main/adaline-perceptron/imagens/perceptrongraph.jpg?raw=true">
