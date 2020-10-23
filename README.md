@@ -8,3 +8,6 @@ Realização de dos projetos relaciona a matéria de Aprendizagem de Máquina. L
 
 ### [Regra de Hebb](regraDeHebb)
 A partir da regra de hebb realizado treinamento para 16 funções lógicas
+
+### [Adaline/Perceptron](adaline-perceptron)
+A partir da regra de hebb realizado treinamento para 16 funções lógicas
