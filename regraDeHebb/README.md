@@ -49,8 +49,7 @@ obtemos o resultado do neuronio treinado e recebemos a comparação entre o resu
 
 <img src=https://latex.codecogs.com/gif.latex?y%3D%5Csum_j%20w_jx_j>
 
-```
-python
+```python
 def ativacao_validacao(t,s,w,b):
     limiar = 0 
     for i in range(16):
